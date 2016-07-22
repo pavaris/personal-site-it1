@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <script src="js/jquery-2.1.4.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/smooth-scroll.js"></script>
+            <title>Pavaris Ketavanan</title>
+            
+            <link rel="shortcut icon" type="image/png" href="img/Logo.png" />
+            <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="css/app.css">
+            <meta name="description" content="Engineer. Photographer. Videographer. Graphic Designer." />
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+              
+                
+            <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+            
+               <script>
+            $(document).ready(function() {
+                function isTouchDevice() {
+                    return true == ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch);
+                }
+
+                if (isTouchDevice() === true) {
+                    $('.caption-box').addClass('mobile-caption-box');
+                    $('.caption').addClass('mobile-caption');
+                    $(".caption-box").hover(function() {
+                        $(this).css("background-color","rgba(0, 0, 0, 0)");
+                        $(this).css("color","white");
+                    });
+                } 
+                     
+
+           
+            });
+                              
+            </script>
+            
+            
+           <script>
+                smoothScroll.init({
+                    offset: 50
+                });                   
+           </script>
+            
+           <script>
+            $(document).ready(function(){
+                $('body').scrollspy({ target: '#myNavbar', offset: 100});
+            });
+            </script> 
+            
+            <script>
+            $(document).on('click','.navbar-collapse.in',function(e) {
+                if( $(e.target).is('a span') && ( $(e.target).attr('class') != 'dropdown-toggle' ) ) {
+                    $(this).collapse('hide');
+                    $('.glyphicon').slideToggle('fast');
+                    $('.icon-bar').slideToggle('fast');                    
+                }
+            });     
+            </script>
+            
+            <script>
+            $(document).ready(function() {
+                $("button").click(function() {
+                    $('.icon-bar').slideToggle('fast');
+                    $('.glyphicon').slideToggle('fast');
+                });
+            });
+            </script>
+            
+            
+        </head>
+        
+        <body data-spy="scroll" data-target="myNavbar">
+            
+            
+            
+       <nav class="navbar navbar-fixed-top navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true" style="display:none; color:gray;"></span>
+                  </button>
+                  <a class="navbar-brand" href="http://pavaris.com">PAVARIS KETAVANAN</a>
+                </div>
+                <div class="collapse navbar-collapse invis" id="myNavbar">
+
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="container" id="work" style="padding-top:30px;">
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    
+                        <div class="wrapper">
+                            <div class="caption"><a href="canon"><span class="caption-box">CANON CANONET QL17 GIII</span></a></div>
+                            <img class="img-responsive" src="img/img1.JPG" />
+                        </div>
+                   
+                </div>
+                
+                <div class="col-md-6">
+                     
+                        <div class="wrapper">
+                            <div class="caption"><a href="nikon"><span class="caption-box">NIKON D7000</span></a></div>
+                            <img class="img-responsive" src="img/img2.jpg" />
+                        </div>
+                               
+                    
+                </div>
+                
+                
+                <div class="col-md-6">
+                       
+                    <div class="wrapper">
+                            <div class="caption"><a href="fujifilm"><span class="caption-box">FUJIFILM X100T</span></a></div>
+                            <img class="img-responsive" src="img/img4.jpg" />
+                        </div>         
+                    
+                </div>
+                
+                
+
+
+                <div class="col-md-6">
+                    
+                        <div class="wrapper">
+                            <div class="caption"><a href="ksa"><span class="caption-box">STONY BROOK KOREAN STUDENT ASSOCIATION</span></a></div>
+                            <img class="img-responsive" src="img/img3.png" />
+                        </div>                
+
+                </div>
+                
+              
+                
+            </div>
+          </div>
+   
+
+
+
+
+        <div id="about" class="container">    
+            <div class="col-sm-12"><h3 style="text-align:left">ABOUT</h3></div>
+            <div class="col-sm-4">
+                <img src="img/about.jpg" class="img-responsive img-about" /><br>
+            </div>
+            <div class="col-sm-8">
+                <div class="img-text">
+                    <span style="font-size: 27px">Hi, I'm Pavaris.</span><br>
+                    I'm a self-taught photographer from Brooklyn. I'm currently a senior at Stony Brook University studying Computer Engineering and hoping to land a job in the field while taking photos, videos and graphic designing in my spare time. 
+                    <br><br>
+                </div>
+                   </div>
+       
+            </div>
+            
+            <div class="container">
+                <div class="col-xs-12" style="text-align:center"><h3>Places I've Worked<br><br></h3></div>
+            </div>
+            
+            <div class="container">
+                <div class="col-sm-3 col-sm-offset-2 col-lg-3 col-lg-offset-2" style="text-align:center">
+                    <a class="places" href="http://www.acornapp.co/" target="_blank"><img class="img-responsive" src="img/acorn.png" /></a>
+                    <h4>Acorn App</h4>
+                </div>
+                
+                <div class="col-sm-6 places-des col-lg-5 col-lg-offset-0">
+                Acorn is a social network in which messages are tagged to certain locations and can only be received in those specific locations. I was given the opportunity to help the Acorn team in their earliest phases by updating content on their website and designing ads through pictures, videos and graphics to spread the word about what the app does.
+                    <br><br><br>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="col-sm-3 col-sm-offset-2 col-lg-3 col-lg-offset-2" style="text-align:center">
+                    <a class="places" href="https://www.usa.canon.com/cusa/home" target="_blank"><img class="img-responsive" src="img/canon.png" /></a>
+                    <h4>Canon USA</h4>
+                </div>
+                <div class="col-sm-6 places-des col-lg-5 col-lg-offset-0">
+                    The Nikon fanboy gets an internship at Canon. Oh the irony. Loyalties aside, working at Canon gave me insight to the corporate world and although I was merely an intern, I felt I played a much bigger role. Web designing and developing for a company site and presenting my work to company executives was an unforgettable experience.
+                    <br><br><br>
+                </div>
+                
+            </div>
+            
+            <div class="container">
+                <div class="col-sm-3 col-sm-offset-2 col-lg-3 col-lg-offset-2 " style="text-align:center">
+                    <a class="places" href="http://it.stonybrook.edu/services/sinc-sites" target="_blank"><img class="img-responsive" src="img/stonybrook.png" /></a>
+                    <h4>Stony Brook University TLT</h4>
+                </div>
+                <div class="col-sm-6 places-des col-lg-5 col-lg-offset-0">
+                TLT is a division under the IT department at Stony Brook University that deals with providing computers for students to use across campus. Managing computer labs and helping others with computer problems allowed me to strengthen my service and communication skills. 
+                    <br><br><br>
+                </div>
+            </div>
+            
+            
+            
+        <div class="container" id="contact">
+            <div class="col-md-12">
+            <h3 style="text-align:left">CONTACT</h3>
+            <div class="contact-container">
+                Email: pavarisket@gmail.com
+                <br><br><br>
+                <div style="font-size:12px"> This site is still a work in progress!</div>
+                <hr>
+            
+            </div>
+        </div>
+        
+        </div>
+    
+            
+        </body>
+    </html>

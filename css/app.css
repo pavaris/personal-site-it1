@@ -1,0 +1,485 @@
+body{
+    font-family: 'lato';
+    height: 100%;
+
+}
+
+
+html{
+    height: 100%;
+}
+
+/* navbar */
+.navbar-default {
+    background-color: #FFF;
+    border-color: #FFF;
+}
+
+.navbar-brand, .navbar-nav li span a{
+    line-height: 70px;
+    height: 70px;
+    padding-top: 0;
+    letter-spacing: 2px; 
+}
+
+.navbar-nav li a{
+    font-size: 14px;
+    margin-right: 35px;
+    margin-top: 0px;
+    padding: 0px 0px;
+    color: gray;
+    letter-spacing: 1.5px;
+}
+
+
+.navbar-nav li{
+    margin-top: 27px;
+}
+
+/* title */
+.navbar-default .navbar-brand {
+    font-size: 22px;
+    color: black;
+    padding-left: 30px;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #000;
+}
+
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: #000;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #000;
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #000;
+    background-color: #FFF;
+}
+
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #FFF;
+}
+
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+
+/* mobile version */
+.navbar-default .navbar-toggle {
+    border: none;
+    margin-top: 18px;
+    background-color: white;
+}
+
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #CCC;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+    background-color: white;
+}
+
+
+.caption{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);    
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.7s;
+    /* Internet Explorer 10 */
+    display:-ms-flexbox;
+    -ms-flex-pack:center;
+    -ms-flex-align:center;
+
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+
+    /* Safari, Opera, and Chrome */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+
+    /* W3C */
+    display:box;
+    box-pack:center;
+    box-align:center;
+
+}
+
+.caption-box{
+    border: 2px solid ghostwhite;
+    padding: 10px;
+    font-size: 22px;
+    color: whitesmoke;
+    transition: all 0.5s ease;
+    display: block;
+}
+
+.caption-box:hover{
+    background-color: white;
+    color: dimgray;
+
+}
+
+.wrapper:hover .caption{
+    opacity: 1;
+    transition: opacity 0.5s;
+
+}
+
+.img-about{
+    max-height: 300px;
+}
+
+.img-text{
+    font-size: 20px;
+
+}
+
+.places img{
+        max-height: 55px;
+        margin: 0 auto;
+    }
+
+
+.places-des{
+    font-size: 16px;
+    letter-spacing: 0.1px;
+}
+
+
+#contact{
+    background-color: lightgray;
+    
+}
+
+.contact-container{
+    font-size: 20px;   
+}
+
+hr{
+    border-color: darkgray;
+    background-color: darkgray;
+    color: darkgray;
+}
+
+.logos{
+    max-height: 45px;
+}
+
+
+.grid-container{
+    padding-top: 70px;
+}
+
+*, *:before, *:after {box-sizing:  border-box !important;}
+
+
+.grid-row {
+     -moz-column-width: 20em;
+     -webkit-column-width: 20em;
+     -moz-column-gap: 1em;
+     -webkit-column-gap:1em; 
+
+}
+
+
+figure {
+    padding-bottom: 10px;
+}
+
+.description{
+    padding-top: 50px;
+    padding-left: 30px;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+
+}
+
+.ksa-videos{
+    padding-top: 50px;
+
+}
+    
+
+iframe{
+    padding-top: 20px;
+    width: 100%;
+}
+
+
+.col-sm-6{
+    background-color: rgba(255,255,255,0.3);
+}
+
+
+h3{
+    font-size: 20px;
+}
+
+
+.mobile-caption{
+        background-color: rgba(0, 0, 0, 0);    
+        opacity: 1;
+        transition: opacity 0.5s;
+
+}
+
+.mobile-caption-box{
+        font-size: 18px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border: none;
+        background-color: rgba(0, 0, 0, 0);    
+        padding-top: 65%;
+        opacity: 1;
+    }
+
+
+.fixed{
+        position: fixed;
+
+}
+
+.scrollable {
+        float: right;
+        width: 75%
+}
+
+
+
+
+.spinner {
+position: fixed;
+left: 60%;
+    width: 30px;
+  height: 30px;
+  background-color: gray;
+
+  margin: 100px auto;
+  -webkit-animation: rotateplane 1.2s infinite ease-in-out;
+  animation: rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes rotateplane {
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
+
+
+
+
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > span > a{
+        color: #777;
+    }
+    
+    .navbar-default .navbar-nav .open .dropdown-menu > li > span > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > span > a:focus {
+        color: #333;
+    }
+    
+    .navbar-nav li a{
+        text-align: center;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        border-bottom: 1px solid ghostwhite;
+        line-height: 10px;
+    }
+    
+    .navbar-nav{
+        padding: 0;
+        margin: 0;
+    }
+    
+    .navbar-default .navbar-brand {
+        padding-left: 20px;
+        font-size: 20px;
+    }
+    
+    
+    .img-about{
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    
+    
+    .img-text{
+        font-size: 15px;
+        text-align: center;
+    }
+    
+
+    .glyphicon-remove{
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 4px;
+        padding-left: 4px;
+        padding-bottom: 1px;
+    }
+    
+    .grid-container{
+        padding-top: 10px;
+        width: 100%;
+    }  
+    
+    .fixed{
+        position: inherit;
+
+    }
+    .scrollable {
+        position: absolute;
+    }
+    
+    iframe{
+        padding-top: none;
+        width: 100%;
+    }
+ 
+    .grid-row{
+        width: 100%;
+    }
+    
+    .ksa-videos{
+        padding-top: 0px;
+        width: 100%;
+    }
+    
+    .spinner{
+        left: 45%;
+    }
+    
+    .places-des{
+        margin-left: auto;
+        margin-right: auto;
+    }
+        
+}
+
+
+
+
+.nav-hover{
+    color: gray;
+    transition: all 300ms ease;
+    border-bottom: 1px solid white;
+    
+}
+
+/*place bottom border*/
+.nav-hover:hover{
+    color: black;
+    border-bottom: 1px solid black;
+    transition: all 1s ease;
+    text-decoration: none;
+
+}
+
+
+.col-md-6{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.container{
+    margin: 0;
+    width: 100%;
+}
+
+
+/*links*/
+
+/*Link settings*/
+a:visited{
+    text-decoration: none;
+    color: white;    
+}
+
+a:active{
+    text-decoration: none;
+    color: black;
+    box-shadow: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+a:focus{
+    box-shadow: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    background-color: none;
+    background: none;
+    
+}
+
+
+.active a span{
+    border-bottom: 1px solid black;
+    color: black;
+}
+
+

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <script src="js/jquery-2.1.4.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/smooth-scroll.js"></script>
+            
+            <script src="js/jquery.magnific-popup.js"></script>
+            <title>Pavaris Ketavanan</title>
+            
+            <link rel="shortcut icon" type="image/png" href="img/Logo.png" />
+            <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="css/app.css">
+            <link rel="stylesheet" href="css/magnific-popup.css"> 
+            <meta name="description" content="Engineer. Photographer. Videographer. Graphic Designer." />
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+              
+                
+            <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+            
+            
+           <script>
+                smoothScroll.init({
+                    offset: 50
+                });                   
+           </script>
+            
+           <script>
+                $(document).ready(function() {
+  $('.image-link').magnificPopup({type: 'image',
+  mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+
+  zoom: {
+    enabled: true, // By default it's false, so don't forget to enable it
+
+    duration: 300, // duration of the effect, in milliseconds
+    easing: 'ease-in-out', // CSS transition easing function 
+
+    // The "opener" function should return the element from which popup will be zoomed in
+    // and to which popup will be scaled down
+    // By defailt it looks for an image tag:
+    opener: function(openerElement) {
+      // openerElement is the element on which popup was initialized, in this case its <a> tag
+      // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+      return openerElement.is('img') ? openerElement : openerElement.find('img');
+    },
+      
+  },
+                                  gallery: {
+      enabled: true
+    }
+
+                                  
+
+});
+});
+                
+            </script> 
+
+   
+            
+            <script>
+             $(document).ready(function() {
+                $("button").click(function() {
+                    $('.icon-bar').slideToggle('fast');
+                    $('.glyphicon').slideToggle('fast');
+                });
+            });
+            </script>
+    
+            
+        </head>
+        
+        <body data-spy="scroll" data-target="myNavbar">
+            
+            
+            
+       <nav class="navbar navbar-fixed-top navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true" style="display:none; color:gray;"></span>
+                  </button>
+                      <a class="navbar-brand" href="http://pavaris.com">PAVARIS KETAVANAN</a>
+                    </div>
+                    <div class="collapse navbar-collapse invis" id="myNavbar">
+
+                    </div>
+                </div>
+            </nav>
+            
+<div class="col-sm-3 fixed description">
+                    <div>
+                        <h3>STONY BROOK KOREAN STUDENT ASSOCIATION</h3>
+                        The Korean Student Association (KSA) at Stony Brook is a Korean-interest organization that hosts events to educate students about Korean culture through events, food, music, dance and videos. I came up with and filmed stories with a Korean drama theme featuring members of the organization's cabinet. 
+                    </div>
+                </div>    
+                <div class="col-sm-9 scrollable ksa-videos">
+                <div class="embed-responsive embed-responsive-16by9">
+                <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/xLPXDjICNV4?rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+               <div class="embed-responsive embed-responsive-16by9">
+               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dWOujAQz090?rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            </div>
+        </body>
+</html>
